@@ -6,8 +6,6 @@ async function buscarEMostrarVideos() {
 
 const varivelDeAmbiente = import.meta.env.VITE_URL_VIDEOS;
 
-console.log("URL de vídeos:", varivelDeAmbiente);
-
   try {
     const busca = await axios.get(varivelDeAmbiente);
     const videos = busca.data;
